@@ -1,0 +1,14 @@
+/*
+Alle Hyperlinks sollen haben:
+- schwarze Schriftfarbe
+- Große Buchstaben 
+- nicht mehr unterstrichen
+- fette Schrift
+*/
+
+a {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
