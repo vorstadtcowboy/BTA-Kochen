@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
   var menuBtn, menu;
   menuBtn = document.getElementsByTagName('button')[0];
@@ -8,7 +8,7 @@
     return;
   }
 
-  menuBtn.onclick = function() {
+  menuBtn.onclick = function () {
     document.body.classList.toggle('overflow');
     menu.classList.toggle('show');
   };

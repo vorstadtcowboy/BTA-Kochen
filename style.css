@@ -1,0 +1,110 @@
+/* Box Kalkulation von dem Rahmen aus für alle Elemente*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+/*
+Die Links in der Navigation
+
+- Großbuchstaben
+- schwarze Schrift check
+- nicht mehr unterstrichen check
+- fette Schrift
+
+*/
+
+.navlinks,
+nav ul li a,
+header a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px;
+  margin-left: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+.navlinks:hover,
+nav ul li a:hover {
+  color: rgb(130, 130, 130);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbutton {
+  background-color: transparent;
+  border: none;
+}
+
+header nav {
+  display: none;
+}
+/* einbelnden der Navigation*/
+.show {
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero {
+  background-image: url('img/intro.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+  color: #fff;
+  text-align: center;
+}
+
+.button {
+  background-color: #fff;
+  color: #374a67;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #374a67;
+  border-radius: 5px;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/**Ab hier immer die Anweisungen für das den größeren Bild */
+
+@media (min-width: 1140px) {
+  header nav {
+    display: block;
+  }
+
+  #navbutton {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+  }
+}
