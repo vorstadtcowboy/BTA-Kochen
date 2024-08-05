@@ -76,6 +76,10 @@ header {
   min-height: 800px;
   color: #fff;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .button {
@@ -106,5 +110,9 @@ main {
 
   nav ul {
     display: flex;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 }
