@@ -90,11 +90,60 @@ header {
   text-transform: uppercase;
   border: 1px solid #374a67;
   border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+  background-color: #374a67;
+  color: #fff;
 }
 
 main {
   max-width: 1100px;
   margin: auto;
+}
+
+/* einfache Form responsiver Bilder*/
+.card img {
+  width: 100%;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.3);
+  overflow: clip;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card a {
+  color: #000;
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+.button.blue {
+  background-color: #374a67;
+  color: #fff;
+  display: block;
+  margin: 10px;
+  flex-grow: 0;
+}
+
+.button.blue:hover {
+  background-color: #fff;
+  color: #374a67;
+}
+
+.card h3,
+.card p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  text-align: center;
 }
 
 /**Ab hier immer die Anweisungen für das den größeren Bild */
@@ -114,5 +163,14 @@ main {
 
   h1 {
     font-size: 2.5rem;
+  }
+
+  .row {
+    display: flex;
+    gap: 16px;
+  }
+
+  .card {
+    width: 25%;
   }
 }
