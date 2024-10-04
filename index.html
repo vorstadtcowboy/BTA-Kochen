@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BTA Kochen - Startseite</title>
+    <title>🍽️ BTA Kochen - Startseite</title>
     <!-- Stylesheet verlinken -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -14,7 +14,7 @@
         <img src="img/logo.png" alt="BTA Kochen" height="40" />
       </a>
       <!-- Burger Menü -->
-      <button>
+      <button id="burger">
         <img src="img/menu.svg" alt="Menü öffnen" height="40" />
       </button>
       <!-- Navigation mit Links und Liste -->
@@ -47,9 +47,58 @@
         <h2>Die neuesten Rezepte</h2>
         <div class="row">
           <article class="card">
-            <img src="img/burger.jpg" alt="Hamburger mit Pommes" />
-            <h3>Total leckerer Burger</h3>
-            <p>
+            <img
+              src="img/burger.jpg"
+              alt="Hamburger mit Pommes"
+              class="card-image"
+            />
+            <h3 class="card-headline">Total leckerer Burger</h3>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus fugit consequuntur itaque quaerat eum, cupiditate
+              maxime qui repudiandae voluptatem tempore.
+            </p>
+            <a href="#" class="button blue">zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <img
+              src="img/burger.jpg"
+              alt="Hamburger mit Pommes"
+              class="card-image"
+            />
+            <h3 class="card-headline">Total leckerer Burger</h3>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus fugit consequuntur itaque quaerat eum, cupiditate
+              maxime qui repudiandae voluptatem tempore.
+            </p>
+            <a href="#" class="button blue">zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <img
+              src="img/burger.jpg"
+              alt="Hamburger mit Pommes"
+              class="card-image"
+            />
+            <h3 class="card-headline">Total leckerer Burger</h3>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus fugit consequuntur itaque quaerat eum, cupiditate
+              maxime qui repudiandae voluptatem tempore.
+            </p>
+            <a href="#" class="button blue">zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <img
+              src="img/burger.jpg"
+              alt="Hamburger mit Pommes"
+              class="card-image"
+            />
+            <h3 class="card-headline">Total leckerer Burger</h3>
+            <p class="card-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repellendus fugit consequuntur itaque quaerat eum, cupiditate
               maxime qui repudiandae voluptatem tempore.
@@ -61,6 +110,52 @@
     </main>
     <!-- hier endet der Hauptteil-->
 
+    <!-- Hoshi Content-->
+    <aside>
+      <h2>Kein Rezept mehr verpassen</h2>
+      <p>Hol dir unseren Newsletter</p>
+      <form action="" method="post">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Deine Emailadresse"
+        />
+        <button type="submit" class="button">Abonnieren</button>
+      </form>
+    </aside>
+
+    <footer>
+      <!-- Footernavigation links -->
+      <nav class="footer-nav-left">
+        <ul>
+          <li>
+            <a href="#">Impressum</a>
+          </li>
+          <li>
+            <a href="#">Datenschutz</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Footernavigation rechts -->
+      <nav class="footer-nav-right">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
     <!-- JavaScript einbinden-->
     <script src="js/menu.js"></script>
   </body>
