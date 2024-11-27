@@ -1,7 +1,3 @@
-html {
-  font-size: 100%;
-}
-
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
@@ -15,9 +11,13 @@ a {
   transition: 0.4s;
 }
 
+/* 26.11.2024 */
+
 a:hover {
   color: #8d8d8d;
 }
+
+/* 26.11.2024 */
 
 button {
   background-color: transparent;
@@ -72,7 +72,7 @@ nav {
   border-radius: 5px;
   font-weight: normal;
 }
-
+/* 26.11.2024 */
 .button:hover,
 .blue {
   background-color: #374a67;
@@ -113,6 +113,7 @@ nav {
 h2 {
   text-align: center;
 }
+/* 26.11.2024 */
 
 /* Ab hier nur noch CSS für große Bildschirme*/
 @media (min-width: 1200px) {
@@ -123,6 +124,8 @@ h2 {
   button {
     display: none;
   }
+
+  /* 26.11.2024 */
 
   h1 {
     font-size: 3rem; /* 3 * Root Font Size = 48px*/
@@ -138,4 +141,6 @@ h2 {
     max-width: 1400px;
     margin: auto;
   }
+
+  /* 26.11.2024 */
 }
