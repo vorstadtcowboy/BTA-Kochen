@@ -1,35 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Das ist ein Kommentar */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 100%;
+}
+
 body {
-  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
 }
-
-a {
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.4s;
-}
-
-/* 26.11.2024 */
-
-a:hover {
-  color: #8d8d8d;
-}
-
-/* 26.11.2024 */
 
 button {
   background-color: transparent;
   border: none;
 }
 
-#logo {
-  height: 40px;
-  width: auto;
+/*
+Alle Links sollen:  
+
+- schwarze Schrift
+- nicht mehr unterstrichen
+- Großbuchstaben
+- Fette Schrift
+
+*/
+
+.nav-links {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.35s linear;
 }
 
-.menu {
+.nav-links:hover {
+  color: #777;
+}
+
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -39,127 +50,126 @@ button {
 
 header {
   display: flex;
-  justify-content: space-between; /* Platz auf der X-Achse */
-  align-items: center; /* Platz auf der Y-Achse*/
+  justify-content: space-between;
+  align-items: center;
   height: 64px;
   padding-left: 20px;
   padding-right: 20px;
+  padding: 0 20px;
 }
 
-nav {
+#main-navigation {
   display: none;
 }
 
-#hero {
+#main-navigation.show {
+  display: block;
+}
+
+#banner {
   background-image: url(img/intro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
   background-position: center;
-  color: white;
-  text-align: center;
+  height: 100vh;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* align-content: center; */
+  text-align: center;
 }
 
 .button {
-  padding: 15px;
   color: #374a67;
+  background-color: #fff;
   border: 1px solid #374a67;
-  background-color: #fff;
+  border-color: #374a67;
+  border-style: solid;
+  border-width: 1px;
+  padding: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
   border-radius: 5px;
-  font-weight: normal;
-}
-/* 26.11.2024 */
-.button:hover,
-.blue {
-  background-color: #374a67;
-  color: #fff;
+  transition: all 0.3s linear;
 }
 
-.blue:hover {
-  color: #374a67;
-  background-color: #fff;
-}
-
-.blue {
-  display: block;
-  margin: 10px;
+.button:hover {
+  background-color: #d7dfea;
 }
 
 .card {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   overflow: hidden;
-  text-align: center;
-  margin: 20px 0;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+
+  /* Die Breite der Karte bei zu viel Text auf 1/4 setzen*/
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  flex: 1 1 25%;
+
+  /*Rezept Button nach unten drücken*/
   display: flex;
   flex-direction: column;
-  min-width: 25%;
 }
 
-.row {
-  padding: 20px;
-}
-
-.card-img {
+.cardpic,
+.card img {
   width: 100%;
+}
+
+.cardlink {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  /*Rezept Button nach unten drücken*/
+  flex-grow: 1;
+}
+
+.blue {
+  color: #fff;
+  background-color: hsl(216, 30%, 31%);
+  display: block;
+  text-align: center;
+  margin: 15px;
+}
+
+.blue:hover {
+  color: #fff;
+  background-color: hsl(216, 30%, 45%);
 }
 
 .card p,
 .card h3 {
-  padding: 10px;
-}
-
-.card p {
-  flex-grow: 1;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 h2 {
   text-align: center;
 }
 
-.aside {
-  background-color: #04122b;
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
-}
-/* 26.11.2024 */
-
-#email {
-  padding: 15px;
-  border-radius: 5px;
-}
-
-/* Ab hier nur noch CSS für große Bildschirme*/
-@media (min-width: 1200px) {
-  nav {
-    display: block;
-  }
-
-  header button {
+/* Ab hier nur für Große Bildschirme (Media Query)*/
+@media (min-width: 1180px) {
+  #menu {
     display: none;
   }
 
-  /* 26.11.2024 */
-
-  h1 {
-    font-size: 3rem; /* 3 * Root Font Size = 48px*/
+  #main-navigation {
+    display: block;
   }
 
-  p {
-    font-size: 20px;
+  h1 {
+    font-size: 3rem;
   }
 
   .row {
     display: flex;
-    gap: 20px;
     max-width: 1400px;
     margin: auto;
+    gap: 20px;
   }
-
-  /* 26.11.2024 */
 }

@@ -3,171 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🍴 BTA Kochen - Eat Smarter</title>
-    <!-- Der Stylesheet Link kommt in den Head (nicht vergessen)-->
+    <title>Hackbert - Mmmmmmh!</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header öffnen-->
     <header>
-      <a href="/">
-        <img src="img/logo.png" alt="BTA Kochen" id="logo" />
+      <a href="/BTA-Kochen/">
+        <img src="img/logo.svg" alt="Hackberts Kochstudio" height="40" />
       </a>
 
-      <!-- Menu Knopf-->
-      <button>
+      <!-- Menuknopf-->
+      <button id="menu">
         <img src="img/menu.svg" alt="Menü öffnen" height="40" />
       </button>
-      <!-- Hauptnavigation -->
-      <nav>
-        <ul class="menu">
-          <!-- 1. List Item-->
+
+      <!-- Navigation -->
+      <nav id="main-navigation">
+        <ul>
+          <!-- 1. Listenpunkt -->
           <li>
-            <a href="/">Home</a>
+            <a href="/BTA-Kochen/" class="nav-links"> Home </a>
           </li>
-          <!-- 2. List Item-->
+          <!-- 2. Listenpunkt -->
           <li>
-            <a href="#">Rezepte</a>
+            <a href="#" class="nav-links"> Rezepte </a>
           </li>
-          <!-- 3. List Item-->
+          <!-- 3. Listenpunkt -->
           <li>
-            <a href="#">Kategorien</a>
+            <a href="#" class="nav-links">Kategorien</a>
           </li>
-          <!-- 4. List Item-->
+          <!-- 4. Listenpunkt -->
           <li>
-            <a href="#">Kontakt</a>
+            <a href="#" class="nav-links">Kontakt</a>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- Header schliessen-->
-    <!-- Hauptteil-->
+
+    <!-- Hier beginnt der Hauptteil-->
     <main>
-      <section id="hero">
+      <section id="banner">
         <h1>Die besten Rezepte für Webworker</h1>
         <p>Es gibt mehr als Pizza & Ravioli</p>
-        <a href="#" class="button">Entdecke die Leckereien </a>
+        <a href="#rezepte" class="button">Entdecke die Leckereien</a>
       </section>
-      <!-- 26.11.2024 -->
+      <!-- 2. Sektion mit Rezepten-->
       <section>
-        <h2>Die neuesten Rezepte</h2>
+        <h2 id="rezepte">Die neuesten Rezepte</h2>
         <div class="row">
+          <!-- Rezeptkarte -->
           <article class="card">
-            <img src="img/burger.jpg" alt="Burger" class="card-img" />
-            <h3>Total, super duper leckerer Burger mit Käse und Sprossen</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              tenetur commodi.
-            </p>
-
-            <a href="#" class="button blue"> zum Rezept </a>
+            <a href="#" class="cardlink">
+              <img src="img/burger.jpg" alt="Burger" class="cardpic" />
+              <h3>Total leckerer Burger</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                commodi consequuntur exercitationem ab quidem quod quia. Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
+                maxime modi. Quasi harum beatae asperiores.
+              </p>
+            </a>
+            <a href="#" class="button blue">zum Rezept</a>
           </article>
 
-          <!-- 2. Karte -->
           <article class="card">
-            <img
-              src="img/kuerbissuppe.jpg"
-              alt="Kürbissuppe"
-              class="card-img"
-            />
-            <h3>Kürbissuppe</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              tenetur commodi maiores maxime officiis fugiat culpa eum facilis
-              nulla?
-            </p>
-            <a href="#" class="button blue"> zum Rezept </a>
+            <a href="#" class="cardlink">
+              <img src="img/burger.jpg" alt="Burger" class="cardpic" />
+              <h3>Total leckerer Burger</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                commodi consequuntur exercitationem ab quidem quod quia.
+              </p>
+            </a>
+            <a href="#" class="button blue">zum Rezept</a>
           </article>
 
-          <!-- 3. Karte-->
           <article class="card">
-            <img src="img/pancakes.jpg" alt="Pancakes" class="card-img" />
-            <h3>Pancakes</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              tenetur commodi maiores maxime officiis fugiat culpa eum facilis
-              nulla?
-            </p>
-            <a href="#" class="button blue"> zum Rezept </a>
+            <a href="#" class="cardlink">
+              <img src="img/burger.jpg" alt="Burger" class="cardpic" />
+              <h3>Total leckerer Burger</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                commodi consequuntur exercitationem ab quidem quod quia.
+              </p>
+            </a>
+            <a href="#" class="button blue">zum Rezept</a>
           </article>
 
-          <!-- 4. Karte -->
           <article class="card">
-            <img
-              src="img/reispfanne-lissabon.jpg"
-              alt="Reispfanne Lissabon"
-              class="card-img"
-            />
-            <h3>Reispfanne Lissabon</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              tenetur commodi maiores maxime officiis fugiat culpa eum facilis
-              nulla?
-            </p>
-            <a href="#" class="button blue"> zum Rezept </a>
+            <a href="#" class="cardlink">
+              <img src="img/burger.jpg" alt="Burger" class="cardpic" />
+              <h3>Total leckerer Burger</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                commodi consequuntur exercitationem ab quidem quod quia.
+              </p>
+            </a>
+            <a href="#" class="button blue">zum Rezept</a>
           </article>
         </div>
       </section>
 
-      <!-- 26.11.2024 -->
-
-      <aside class="aside">
+      <!-- 3. Sektion mit Formular-->
+      <section id="newsletter">
         <h2>Kein Rezept mehr verpassen</h2>
-        <p>Hol dir unseren Newsletter</p>
-
+        <p>Hol dir unserer Newsletter</p>
         <form action="" method="get">
           <input
             type="email"
-            name="newsletter"
-            id="email"
             placeholder="Deine Emailadresse"
+            name="emailadresse"
           />
-          <button type="submit" class="button">Abonnieren</button>
+          <button class="button">Abonnieren</button>
         </form>
-      </aside>
+      </section>
     </main>
 
-    <!-- Hauptteil vorbei-->
-    <footer>
-      <nav>
-        <ul class="menu menu-footer-left">
-          <!-- 1. List Item-->
-          <li>
-            <a href="#">Impressum</a>
-          </li>
-          <!-- 2. List Item-->
-          <li>
-            <a href="#">Datenschutz</a>
-          </li>
-          <!-- 3. List Item-->
-          <li>
-            <a href="#">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav>
-        <ul class="menu menu-footer-right">
-          <!-- 1. List Item-->
-          <li>
-            <a href="https://facebook.com/" target="_blank">
-              <img src="img/facebook2.svg" alt="Facebook" width="32" />
-            </a>
-          </li>
-          <!-- 2. List Item-->
-          <li>
-            <a href="https://instagram.com/" target="_blank">
-              <img src="img/instagram.svg" alt="Instagram" width="32" />
-            </a>
-          </li>
-          <!-- 3. List Item-->
-          <li>
-            <a href="https://youtube.com/" target="_blank">
-              <img src="img/youtube.svg" alt="Instagram" width="32" />
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
