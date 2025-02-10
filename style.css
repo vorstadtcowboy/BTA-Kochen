@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-height: 64px;
+  /* --variablen-name: variablen wert */
+}
+
 /* Das ist ein Kommentar */
 html {
   font-family: "Poppins", sans-serif;
@@ -62,14 +67,25 @@ ul {
   gap: 10px;
 }
 
+header ul {
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  padding-top: 100px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: var(--header-height);
   padding-left: 20px;
   padding-right: 20px;
   padding: 0 20px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 99;
 }
 
 #main-navigation {
@@ -78,6 +94,12 @@ header {
 
 #main-navigation.show {
   display: block;
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
 }
 
 #banner {
@@ -234,5 +256,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+  }
+
+  header ul {
+    flex-direction: row;
+    padding: 0;
+    gap: 10px;
   }
 }
